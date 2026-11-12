@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi servicio RG | Reparación de refrigeradores en Ciudad de México</title>
+<meta name="description" content="Multi servicio RG: reparación de refrigeradores y congeladores a domicilio en Ciudad de México. Carga de gas refrigerante, cambio de compresor y mantenimiento de condensador y evaporador.">
+<meta name="theme-color" content="#0a0f1e">
+<meta property="og:title" content="Multi servicio RG | Reparación de refrigeradores en CDMX">
+<meta property="og:description" content="Reparación de refrigeradores y congeladores a domicilio en Ciudad de México. Carga de gas, cambio de compresor y mantenimiento.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/carga-gas-1.jpg">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/icon-192.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Multi servicio RG","description":"Servicio técnico de refrigeración: reparación de refrigeradores y congeladores, carga de gas refrigerante, cambio de compresor y mantenimiento de condensador y evaporador, a domicilio en Ciudad de México.","address":{"@type":"PostalAddress","streetAddress":"C. 323 710, Nueva Atzacoalco","addressLocality":"Gustavo A. Madero, Ciudad de México","postalCode":"07420","addressCountry":"MX"},"telephone":"+525532861160","email":"robertogm0779@gmail.com","areaServed":"Ciudad de México"}
+</script>
+<style>
+:root{--bg:#0a0f1e;--bg2:#0f172a;--card:#111c33;--line:#1e2a45;--cyan:#22d3ee;--cyan2:#67e8f9;--cyan-dk:#0e7490;--text:#f1f5f9;--muted:#94a3b8;--radius:18px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--cyan2);text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15;font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,4.5vw,2.5rem);margin-bottom:10px}
+h2 .hl{color:var(--cyan)}
+.sec{padding:72px 0}
+.sec-sub{color:var(--muted);max-width:640px;margin-bottom:36px}
+.eyebrow{color:var(--cyan);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;margin-bottom:12px}
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,15,30,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text);font-weight:800;font-size:1.12rem;letter-spacing:-.01em}
+.brand .mark{width:38px;height:38px;border-radius:50%;background:var(--cyan);display:grid;place-items:center;flex:none}
+.brand .mark svg{width:22px;height:22px;stroke:#0a0f1e}
+.brand small{display:block;font-size:.68rem;color:var(--cyan);letter-spacing:.18em;font-weight:700}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{color:var(--text);font-weight:600;font-size:.95rem}
+.nav-links a:hover{color:var(--cyan)}
+.nav-call{background:var(--cyan);color:#06202a;font-weight:800;padding:9px 16px;border-radius:999px;font-size:.9rem}
+.nav-call:hover{background:var(--cyan2);color:#06202a}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:10px;color:var(--text);font-size:1.3rem;padding:4px 12px;cursor:pointer}
+/* HERO */
+.hero{padding:132px 0 64px;background:radial-gradient(900px 500px at 85% -10%,rgba(34,211,238,.18),transparent 60%),radial-gradient(700px 420px at -10% 110%,rgba(34,211,238,.10),transparent 55%),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.6vw,3.6rem);margin-bottom:16px}
+.hero h1 .hl{color:var(--cyan)}
+.hero p.lead{color:var(--muted);font-size:1.12rem;margin-bottom:26px;max-width:520px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:800;padding:14px 24px;border-radius:999px;font-size:1rem;border:2px solid transparent;cursor:pointer}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.btn-cyan{background:var(--cyan);color:#06202a}
+.btn-cyan:hover{background:var(--cyan2)}
+.btn-ghost{border-color:var(--cyan);color:var(--cyan2);background:transparent}
+.btn-ghost:hover{background:rgba(34,211,238,.12)}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--bg2);color:var(--muted);border-radius:999px;padding:7px 14px;font-size:.88rem;font-weight:600}
+.chip b{color:var(--cyan2)}
+.hero-photo{position:relative}
+.hero-photo img{border-radius:24px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.55),0 0 0 6px rgba(34,211,238,.08);width:100%;height:420px;object-fit:cover}
+.hero-badge{position:absolute;left:-14px;bottom:22px;background:var(--card);border:1px solid var(--cyan);border-radius:14px;padding:12px 16px;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.hero-badge b{color:var(--cyan);display:block;font-size:1.02rem}
+.hero-badge span{color:var(--muted);font-size:.85rem}
+/* TRUST STRIP */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:26px 0}
+.trust-item{display:flex;gap:12px;align-items:flex-start}
+.trust-item .ic{flex:none;width:42px;height:42px;border-radius:12px;background:rgba(34,211,238,.14);display:grid;place-items:center}
+.trust-item .ic svg{width:22px;height:22px;stroke:var(--cyan);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.trust-item b{display:block;font-size:.98rem}
+.trust-item span{color:var(--muted);font-size:.88rem}
+/* SERVICES GRID */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.serv{background:linear-gradient(160deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;transition:transform .25s,border-color .25s}
+.serv:hover{transform:translateY(-4px);border-color:var(--cyan)}
+.serv .ic{width:56px;height:56px;border-radius:16px;background:rgba(34,211,238,.14);display:grid;place-items:center;margin-bottom:16px}
+.serv .ic svg{width:30px;height:30px;stroke:var(--cyan);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.serv h3{font-size:1.18rem;margin-bottom:8px}
+.serv p{color:var(--muted);font-size:.96rem}
+/* GALLERY MOSAIC */
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:14px}
+.mosaic figure{position:relative;border-radius:16px;overflow:hidden;cursor:pointer;border:1px solid var(--line);margin:0}
+.mosaic figure img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.mosaic figure:hover img{transform:scale(1.06)}
+.mosaic figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;background:linear-gradient(transparent,rgba(4,8,18,.88));font-size:.88rem;font-weight:600;color:#fff}
+.m-big{grid-column:span 2;grid-row:span 2}
+.m-wide{grid-column:span 2}
+.m-tall{grid-row:span 2}
+/* PROCESS TIMELINE */
+.steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.steps::before{content:"";position:absolute;top:31px;left:8%;right:8%;height:2px;background:linear-gradient(90deg,var(--cyan),var(--cyan-dk));opacity:.5}
+.step{position:relative;text-align:center;padding:0 10px}
+.step .num{width:62px;height:62px;margin:0 auto 16px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan);color:var(--cyan);font-size:1.5rem;font-weight:800;display:grid;place-items:center;position:relative;z-index:1}
+.step h3{margin-bottom:8px}
+.step p{color:var(--muted);font-size:.96rem}
+/* FORM */
+.form-card{background:linear-gradient(160deg,#101d38,var(--bg2));border:1px solid var(--line);border-radius:22px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.form-card h3{font-size:1.35rem;margin-bottom:8px}
+.form-card .side p{color:var(--muted);margin-bottom:16px}
+.form-card .side ul{list-style:none;color:var(--muted)}
+.form-card .side li{margin-bottom:10px;padding-left:26px;position:relative}
+.form-card .side li::before{content:"❄";position:absolute;left:0;color:var(--cyan)}
+label{display:block;font-weight:700;font-size:.9rem;margin-bottom:6px}
+input,select,textarea{width:100%;background:#0a1226;border:1px solid var(--line);border-radius:12px;color:var(--text);padding:12px 14px;font-size:1rem;font-family:inherit;margin-bottom:14px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--cyan);border-color:var(--cyan)}
+textarea{resize:vertical;min-height:90px}
+.form-note{color:var(--muted);font-size:.88rem;margin-top:12px}
+.btn-wa{display:inline-flex;align-items:center;gap:9px;justify-content:center;width:100%;margin-top:12px;background:transparent;border:2px solid var(--cyan);color:var(--cyan2);font-weight:800;padding:13px 20px;border-radius:999px;font-size:1rem;cursor:pointer}
+.btn-wa:hover{background:rgba(34,211,238,.12)}
+.btn-wa svg{width:20px;height:20px;fill:currentColor}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.contact-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.contact-card .ic{width:48px;height:48px;border-radius:14px;background:rgba(34,211,238,.14);display:grid;place-items:center;margin-bottom:14px}
+.contact-card .ic svg{width:24px;height:24px;stroke:var(--cyan);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.contact-card h3{margin-bottom:6px}
+.contact-card p{color:var(--muted)}
+.contact-card a{color:var(--text);font-weight:700;word-break:break-word}
+.contact-card a:hover{color:var(--cyan)}
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:34px 0;background:var(--bg2)}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.foot p{color:var(--muted);font-size:.9rem}
+/* FLOATING BUTTONS */
+.floatbtn{position:fixed;right:18px;z-index:60;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.5);border:none;cursor:pointer}
+.floatbtn svg{width:26px;height:26px;fill:#06202a}
+.float-wa{bottom:18px;background:var(--cyan)}
+.float-call{bottom:86px;background:#e2f6fb}
+.float-call svg{fill:#0a0f1e}
+/* LIGHTBOX */
+.lightbox{position:fixed;inset:0;background:rgba(3,6,14,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:80vh;border-radius:14px;border:1px solid var(--line)}
+.lightbox figcaption{color:#fff;text-align:center;margin-top:12px;font-weight:600}
+.lightbox .close{position:absolute;top:18px;right:22px;background:none;border:1px solid var(--cyan);color:var(--cyan2);font-size:1.4rem;border-radius:50%;width:44px;height:44px;cursor:pointer}
+/* REVEAL */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero-photo img{height:300px}
+  .hero-badge{left:10px}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .serv-grid{grid-template-columns:repeat(2,1fr)}
+  .mosaic{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  .m-big{grid-column:span 2;grid-row:span 1}
+  .steps{grid-template-columns:1fr;gap:30px}
+  .steps::before{display:none}
+  .form-card{grid-template-columns:1fr;padding:26px}
+  .contact-grid{grid-template-columns:1fr}
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg2);flex-direction:column;align-items:flex-start;padding:18px 22px;gap:16px;border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .nav-toggle{display:block}
+}
+@media (max-width:560px){
+  .serv-grid{grid-template-columns:1fr}
+  .sec{padding:56px 0}
+  .hero{padding-top:112px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#inicio" aria-label="Multi servicio RG - inicio">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="3.3" y1="7" x2="20.7" y2="17"/><line x1="3.3" y1="17" x2="20.7" y2="7"/></svg></span>
+      <span>Multi servicio RG<small>REFRIGERACIÓN • CDMX</small></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#cotizar">Cotizar</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-call" href="tel:+525532861160">55 3286 1160</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv">
+        <p class="eyebrow">Servicio técnico de refrigeración • CDMX</p>
+        <h1>Tu refrigerador <span class="hl">enfría como nuevo.</span></h1>
+        <p class="lead">Reparación de refrigeradores y congeladores a domicilio en Ciudad de México. Carga de gas, cambio de compresor y mantenimiento de condensador y evaporador.</p>
+        <div class="hero-btns">
+          <a class="btn btn-cyan" href="tel:+525532861160"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Llamar ahora</a>
+          <a class="btn btn-ghost" href="https://wa.me/525532861160?text=Hola%20Multi%20servicio%20RG%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20refrigerador." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.5 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>WhatsApp</a>
+        </div>
+        <div class="chips">
+          <span class="chip">❄ <b>Refrigeradores</b> y congeladores</span>
+          <span class="chip">🏠 Servicio <b>a domicilio</b></span>
+          <span class="chip">📍 <b>Gustavo A. Madero</b>, CDMX</span>
+        </div>
+      </div>
+      <div class="hero-photo rv">
+        <img src="img/carga-gas-1.jpg" alt="Técnico cargando gas refrigerante a un refrigerador con manómetros">
+        <div class="hero-badge"><b>Carga de gas R134a</b><span>Con manómetros profesionales</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></span><div><b>Servicio a domicilio</b><span>Te visitamos en tu casa en Ciudad de México</span></div></div>
+      <div class="trust-item rv"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span><div><b>Diagnóstico y cotización</b><span>Te decimos cuánto cuesta antes de reparar</span></div></div>
+      <div class="trust-item rv"><span class="ic"><svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><line x1="3.3" y1="7" x2="20.7" y2="17"/><line x1="3.3" y1="17" x2="20.7" y2="7"/></svg></span><div><b>Especialistas en frío</b><span>Refrigeradores, congeladores y gas refrigerante</span></div></div>
+      <div class="trust-item rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>En Gustavo A. Madero</b><span>C. 323 710, Nueva Atzacoalco, CDMX</span></div></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="sec" id="servicios">
+    <div class="wrap">
+      <p class="eyebrow rv">Lo que reparamos</p>
+      <h2 class="rv">Servicios de <span class="hl">refrigeración</span> y línea blanca</h2>
+      <p class="sec-sub rv">Refrigeradores, congeladores, lavadoras y aires acondicionados: todo lo que tu hogar necesita para funcionar como debe.</p>
+      <div class="serv-grid">
+        <article class="serv rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2"/><line x1="6" y1="10" x2="18" y2="10"/><line x1="9" y1="6" x2="9" y2="8"/><line x1="9" y1="13.5" x2="9" y2="15.5"/></svg></span>
+          <h3>Reparación de refrigeradores</h3>
+          <p>Diagnóstico y reparación de refrigeradores que no enfrían, hacen ruido o dejaron de funcionar.</p>
+        </article>
+        <article class="serv rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 1 9-9"/><path d="M12 12l4.5-4.5"/><circle cx="12" cy="12" r="1.6"/><path d="M18.5 3.5l1.5 1.5M21 8h-2"/></svg></span>
+          <h3>Carga de gas refrigerante</h3>
+          <p>Carga de gas R134a con manómetros, para que tu refrigerador vuelva a enfriar como debe.</p>
+        </article>
+        <article class="serv rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span>
+          <h3>Cambio de compresor</h3>
+          <p>Cambio de compresor y reparación del sistema de enfriamiento de tu refrigerador.</p>
+        </article>
+        <article class="serv rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><line x1="3.3" y1="7" x2="20.7" y2="17"/><line x1="3.3" y1="17" x2="20.7" y2="7"/></svg></span>
+          <h3>Reparación de congeladores</h3>
+          <p>Reparación de congeladores que no enfrían o ya no mantienen el frío.</p>
+        </article>
+        <article class="serv rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l2.1 6.4L21 10.5l-6.9 2.1L12 19l-2.1-6.4L3 10.5l6.9-2.1z"/><path d="M19 15l.9 2.6L22.5 18.5l-2.6.9L19 22l-.9-2.6-2.6-.9 2.6-.9z"/></svg></span>
+          <h3>Mantenimiento de condensador</h3>
+          <p>Limpieza y mantenimiento del condensador para que el equipo trabaje mejor y enfríe más.</p>
+        </article>
+        <article class="serv rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 8c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 3-2"/><path d="M3 13c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 3-2"/><path d="M3 18c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 3-2"/></svg></span>
+          <h3>Mantenimiento de evaporador</h3>
+          <p>Limpieza y revisión del evaporador y el ventilador interno de tu refrigerador.</p>
+        </article>
+        <article class="serv rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><line x1="8" y1="6.5" x2="16" y2="6.5"/></svg></span>
+          <h3>Reparación de lavadoras</h3>
+          <p>Reparación de lavadoras que no lavan, no centrifugan o dejaron de funcionar.</p>
+        </article>
+        <article class="serv rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="10" rx="2"/><line x1="7" y1="18" x2="7" y2="21"/><line x1="17" y1="18" x2="17" y2="21"/><path d="M7 8h10M7 11h10"/></svg></span>
+          <h3>Aires acondicionados</h3>
+          <p>Mantenimiento y reparación de aires acondicionados para que enfríen como deben.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="sec" id="galeria" style="background:var(--bg2)">
+    <div class="wrap">
+      <p class="eyebrow rv">Trabajo real</p>
+      <h2 class="rv">Así trabajamos en <span class="hl">tu refrigerador</span></h2>
+      <p class="sec-sub rv">Fotos reales de cargas de gas, compresores, condensadores y limpiezas. Toca una foto para verla grande.</p>
+      <div class="mosaic" id="galeriaGrid">
+        <figure class="m-big rv"><img src="img/carga-gas-1.jpg" alt="Carga de gas R134a con manómetros" loading="lazy"><figcaption>Carga de gas R134a con manómetros</figcaption></figure>
+        <figure class="rv"><img src="img/compresor.jpg" alt="Compresor del refrigerador" loading="lazy"><figcaption>Compresor del refrigerador</figcaption></figure>
+        <figure class="m-tall rv"><img src="img/carga-gas-2.jpg" alt="Manómetros durante la carga de gas" loading="lazy"><figcaption>Manómetros durante la carga de gas</figcaption></figure>
+        <figure class="rv"><img src="img/evaporador.jpg" alt="Evaporador dentro del refrigerador" loading="lazy"><figcaption>Evaporador dentro del refrigerador</figcaption></figure>
+        <figure class="m-wide rv"><img src="img/condensador.jpg" alt="Condensador del equipo" loading="lazy"><figcaption>Condensador del equipo</figcaption></figure>
+        <figure class="rv"><img src="img/condensador-sucio.jpg" alt="Condensador con suciedad acumulada" loading="lazy"><figcaption>Condensador con suciedad acumulada</figcaption></figure>
+        <figure class="rv"><img src="img/limpieza-1.jpg" alt="Limpieza del condensador" loading="lazy"><figcaption>Limpieza del condensador</figcaption></figure>
+        <figure class="rv"><img src="img/limpieza-2.jpg" alt="Limpieza con espuma del condensador" loading="lazy"><figcaption>Limpieza con espuma del condensador</figcaption></figure>
+        <figure class="m-big rv"><img src="img/refri-compresor.jpg" alt="Compresor de refrigerador" loading="lazy"><figcaption>Compresor de refrigerador</figcaption></figure>
+        <figure class="rv"><img src="img/refri-compresor-cobre.jpg" alt="Compresor con tubería de cobre" loading="lazy"><figcaption>Compresor con tubería de cobre</figcaption></figure>
+        <figure class="m-tall rv"><img src="img/refri-serpentin.jpg" alt="Serpentín del evaporador" loading="lazy"><figcaption>Serpentín del evaporador</figcaption></figure>
+        <figure class="rv"><img src="img/refri-limpio.jpg" alt="Refrigerador limpio y en servicio" loading="lazy"><figcaption>Refrigerador limpio y en servicio</figcaption></figure>
+        <figure class="m-wide rv"><img src="img/refri-inteligente.jpg" alt="Refrigerador moderno en revisión" loading="lazy"><figcaption>Refrigerador moderno en revisión</figcaption></figure>
+        <figure class="rv"><img src="img/tarjeta-refri.jpg" alt="Tarjeta electrónica del refrigerador" loading="lazy"><figcaption>Tarjeta electrónica del refrigerador</figcaption></figure>
+        <figure class="rv"><img src="img/aire-manometros.jpg" alt="Manómetros para aire acondicionado" loading="lazy"><figcaption>Manómetros para aire acondicionado</figcaption></figure>
+        <figure class="m-big rv"><img src="img/hero-aire.jpg" alt="Aire acondicionado en mantenimiento" loading="lazy"><figcaption>Aire acondicionado en mantenimiento</figcaption></figure>
+        <figure class="m-tall rv"><img src="img/tecnico-trabajando.jpg" alt="Técnico reparando una lavadora" loading="lazy"><figcaption>Técnico reparando una lavadora</figcaption></figure>
+        <figure class="rv"><img src="img/lavadora-reparacion.jpg" alt="Reparación de lavadora" loading="lazy"><figcaption>Reparación de lavadora</figcaption></figure>
+        <figure class="m-wide rv"><img src="img/lavadora-frente.jpg" alt="Lavadora de carga frontal" loading="lazy"><figcaption>Lavadora de carga frontal</figcaption></figure>
+        <figure class="rv"><img src="img/tarjeta-electronica.jpg" alt="Tarjeta electrónica" loading="lazy"><figcaption>Tarjeta electrónica</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="sec" id="proceso">
+    <div class="wrap">
+      <p class="eyebrow rv">Así de fácil es</p>
+      <h2 class="rv">Tu refrigerador reparado en <span class="hl">3 pasos</span></h2>
+      <p class="sec-sub rv">Nos contactas, vamos a tu domicilio, diagnosticamos y te cotizamos.</p>
+      <div class="steps">
+        <div class="step rv"><div class="num">1</div><h3>Nos contactas</h3><p>Llámanos o escríbenos por WhatsApp y cuéntanos qué le pasa a tu refrigerador o congelador.</p></div>
+        <div class="step rv"><div class="num">2</div><h3>Vamos a tu domicilio</h3><p>Te visitamos en tu casa en Ciudad de México para revisar el equipo.</p></div>
+        <div class="step rv"><div class="num">3</div><h3>Diagnosticamos y te cotizamos</h3><p>Revisamos el equipo y te decimos cuánto cuesta la reparación antes de hacerla.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section class="sec" id="cotizar" style="background:var(--bg2)">
+    <div class="wrap">
+      <p class="eyebrow rv">Pide tu cotización</p>
+      <h2 class="rv">Cuéntanos qué le pasa a <span class="hl">tu equipo</span></h2>
+      <p class="sec-sub rv">Llena el formulario y tu solicitud llega directo a nuestro correo. También puedes escribirnos por WhatsApp.</p>
+      <div class="form-card rv">
+        <div class="side">
+          <h3>¿Qué incluye tu solicitud?</h3>
+          <p>Tu nombre, tu teléfono, el servicio que necesitas y una descripción de la falla. Con eso te contactamos para agendar la visita.</p>
+          <ul>
+            <li>Respuesta por correo o por WhatsApp</li>
+            <li>Visita a domicilio en Ciudad de México</li>
+            <li>Cotización antes de reparar</li>
+          </ul>
+        </div>
+        <form id="cotizaForm" novalidate>
+          <label for="fNombre">Tu nombre</label>
+          <input id="fNombre" type="text" placeholder="Ej. Roberto García" required>
+          <label for="fTelefono">Tu teléfono</label>
+          <input id="fTelefono" type="tel" placeholder="Ej. 55 1234 5678" required>
+          <label for="fServicio">Servicio que necesitas</label>
+          <select id="fServicio">
+            <option>Reparación de refrigerador</option>
+            <option>Carga de gas refrigerante</option>
+            <option>Cambio de compresor</option>
+            <option>Reparación de congelador</option>
+            <option>Mantenimiento de condensador</option>
+            <option>Mantenimiento de evaporador</option>
+            <option>Reparación de lavadora</option>
+            <option>Aires acondicionados</option>
+            <option>Otro</option>
+          </select>
+          <label for="fMensaje">¿Qué le pasa a tu equipo?</label>
+          <textarea id="fMensaje" placeholder="Ej. Mi refrigerador ya no enfría y hace mucho ruido."></textarea>
+          <button class="btn btn-cyan" type="submit" style="width:100%;justify-content:center">Enviar cotización por correo</button>
+          <a class="btn-wa" href="https://wa.me/525532861160?text=Hola%20Multi%20servicio%20RG%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20refrigerador." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.5 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>O también por WhatsApp</a>
+          <p class="form-note" id="formNote">Al enviar se abrirá tu correo con la cotización lista para mandar a robertogm0779@gmail.com.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec" id="contacto">
+    <div class="wrap">
+      <p class="eyebrow rv">Contacto</p>
+      <h2 class="rv">Estamos en <span class="hl">Gustavo A. Madero</span></h2>
+      <p class="sec-sub rv">Llámanos, escríbenos por WhatsApp o mándanos un correo.</p>
+      <div class="contact-grid">
+        <div class="contact-card rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <h3>Dirección</h3>
+          <p>C. 323 710, Nueva Atzacoalco, Gustavo A. Madero, 07420, Ciudad de México, CDMX</p>
+          <p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&amp;query=C.+323+710%2C+Nueva+Atzacoalco%2C+Gustavo+A.+Madero%2C+07420%2C+Ciudad+de+M%C3%A9xico" target="_blank" rel="noopener">Ver en Google Maps →</a></p>
+        </div>
+        <div class="contact-card rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span>
+          <h3>Teléfono y WhatsApp</h3>
+          <p><a href="tel:+525532861160">55 3286 1160</a></p>
+          <p style="margin-top:10px"><a href="https://wa.me/525532861160" target="_blank" rel="noopener">Escríbenos por WhatsApp →</a></p>
+        </div>
+        <div class="contact-card rv">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></span>
+          <h3>Correo</h3>
+          <p><a href="mailto:robertogm0779@gmail.com">robertogm0779@gmail.com</a></p>
+          <p style="margin-top:10px">Las cotizaciones del formulario llegan a este correo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <p><strong style="color:var(--text)">Multi servicio RG</strong> — Reparación de refrigeradores y congeladores en Ciudad de México.</p>
+      <p>C. 323 710, Nueva Atzacoalco, Gustavo A. Madero, 07420, Ciudad de México, CDMX</p>
+    </div>
+    <p>© 2026 Multi servicio RG</p>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a class="floatbtn float-call" href="tel:+525532861160" aria-label="Llamar a Multi servicio RG"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>
+<a class="floatbtn float-wa" href="https://wa.me/525532861160?text=Hola%20Multi%20servicio%20RG%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20refrigerador." target="_blank" rel="noopener" aria-label="WhatsApp Multi servicio RG"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.5 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg></a>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Foto ampliada">
+  <button class="close" id="lightboxClose" aria-label="Cerrar">✕</button>
+  <figure style="margin:0"><img id="lightboxImg" src="" alt=""><figcaption id="lightboxCap"></figcaption></figure>
+</div>
+
+<script>
+(function(){
+  // Reveal on scroll (guarded)
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    els.forEach(function(el){io.observe(el);});
+  }else{
+    els.forEach(function(el){el.classList.add('in');});
+  }
+  // Mobile nav toggle
+  var t=document.getElementById('navToggle'),links=document.getElementById('navLinks');
+  if(t&&links){t.addEventListener('click',function(){links.classList.toggle('open');});
+    links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');});});}
+  // Lightbox
+  var lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightboxImg'),lbCap=document.getElementById('lightboxCap');
+  function openLb(img,cap){lbImg.src=img;lbImg.alt=cap;lbCap.textContent=cap;lb.classList.add('open');}
+  function closeLb(){lb.classList.remove('open');}
+  document.querySelectorAll('#galeriaGrid figure').forEach(function(f){
+    f.addEventListener('click',function(){
+      var im=f.querySelector('img'),cp=f.querySelector('figcaption');
+      openLb(im.getAttribute('src'),cp?cp.textContent:'');
+    });
+  });
+  var c=document.getElementById('lightboxClose');
+  if(c)c.addEventListener('click',closeLb);
+  lb.addEventListener('click',function(e){if(e.target===lb)closeLb();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
+  // Quote form -> mailto to robertogm0779@gmail.com
+  var form=document.getElementById('cotizaForm');
+  if(form){form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var nombre=document.getElementById('fNombre').value.trim();
+    var tel=document.getElementById('fTelefono').value.trim();
+    var serv=document.getElementById('fServicio').value;
+    var msg=document.getElementById('fMensaje').value.trim();
+    var body='Nombre: '+nombre+'\nTeléfono: '+tel+'\nServicio: '+serv+'\n\nMensaje:\n'+msg;
+    var url='mailto:robertogm0779@gmail.com?subject='+encodeURIComponent('Cotización – Multi servicio RG')+'&body='+encodeURIComponent(body);
+    window.open(url);
+    var n=document.getElementById('formNote');
+    if(n)n.textContent='Se abrió tu correo con la cotización lista para enviar a robertogm0779@gmail.com.';
+  });}
+  // Service worker
+  if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){});}
+})();
+</script>
+</body>
+</html>
